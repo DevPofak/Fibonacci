@@ -1,0 +1,40 @@
+// C# Program Fibonacci Project
+// GitHub.com/DevPofak
+
+using System; 
+class fibonacci { 
+      
+static int fib(int n) 
+    { 
+          
+        // Yek Araye Baraye Zakhire Fibonacci
+        // 1 Mored Azafe Baraye Residegi
+        // n = 0 
+        int []f = new int[n + 2];  
+        int i; 
+          
+        //F1 Hamon 1 Hast .
+        //F0 Hamon 0 Hast .
+        f[0] = 0; 
+        f[1] = 1; 
+        
+        for (i = 2; i <= n; i++) 
+        { 
+         
+        //2 Adad Qabli Ra Zakhire Va Ezafe Kon .
+            f[i] = f[i - 1] + f[i - 2]; 
+        } 
+          
+        return f[n]; 
+    } 
+      
+    
+    public static void Main () 
+    { 
+        int n = 9; 
+        Console.WriteLine(fib(n)); 
+    } 
+} 
+  
+  
+// Honarstan Solaha 1401.
